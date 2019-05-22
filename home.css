@@ -1,0 +1,72 @@
+/* Cette classe devra representer les differents elements de style de notre site web
+    On devra utiliser de ce fait cette page pour styler toutes les differentes pages du site */
+body {
+    background-color: gainsboro;
+}
+
+.header {
+    height: 30%;
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 37%;
+    height: 100%;
+    background-image: url("./Web_Pictures/home.jpg");
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.texte {
+    width: 63%;
+    height: 100%;
+    background-color: lightgray;
+    float: right;
+}
+
+.content {
+    background-color: white;
+    height: 50%;
+    width: 75%;
+    margin-left: 12%;
+}
+
+.navBar {
+    height: 10%;
+    width: 100%;
+    background-color: darkgray;
+}
+
+.footer {
+    background-color: yellow;
+    height: 15%;
+    width: 75%;
+    margin-left: 12%;
+    margin-bottom: 20px;
+}
+
+.titre {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 26px;
+    padding-top: 50px;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    font-weight: 100;
+    margin-right: 160px;
+    float: right;
+}
+
+.link {
+    margin-left: 15px;
+    text-align: center;
+}
