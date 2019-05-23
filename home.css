@@ -40,7 +40,7 @@ body {
 }
 
 .footer {
-    background-color: yellow;
+    background-color: lightgray;
     height: 15%;
     width: 75%;
     margin-left: 12%;
@@ -69,4 +69,17 @@ body {
 .link {
     margin-left: 15px;
     text-align: center;
+}
+
+.basDePage {
+    margin-left: 50px;
+}
+
+.contenu {
+    margin-left: 20px;
+}
+
+.confirm {
+    float: right;
+    margin-right: 5px;
 }

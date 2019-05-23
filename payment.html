@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./home.css"> 
+        <title> Paiement </title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="logo"></div>
+            <div class="texte">
+                <div class="titre"><b> ALLSPICES </b></div>
+                <div class="subtitle"><i> Votre site de commande en ligne </i></div>
+            </div>
+        </div>
+
+        <div class="navBar">
+            <ul class="nav">
+                <li class="link"><a href="./homePage.html"> Accueil </a></li>
+                <li class="link"> Restaurants </li>
+                <li class="link"> Liste des menu </li>
+                <li class="link"><a href="./order.html"> Panier </a></li> 
+                <li class="link"><a href="./payment.html"> Paiement </a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <br/>
+            <form>
+                <div> Montant total de la commande </div>
+                <label for="adresse"> Veuillez entrer votre adresse: </label>
+                <input type="text" name="adresse" id="adresse"/>
+                <label for="code"> Veuillez entrer votre code postal: </label>
+                <input type="text" name="code" id="code"/>
+                <br/>
+                <p>
+                    Veuillez choisir votre mode de paiement: <br/>
+                    <input type="radio" name="debit" id="debit"/> <label for="debit"> Carte de debit </label><br/>
+                    <input type="radio" name="credit" id="credit"/> <label for="credit"> Carte de credit </label><br/>
+                    <input type="radio" name="cash" id="cash"/> <label for="cash"> Cash a la livraison </label> <br/>
+                </p>
+                <input class="confirm" type="button" value="confirmer"/>
+            </form>
+        </div>
+
+        <div class="footer">
+            <div class="basDePage"> Nous sommes a votre ecoute a tout temps.</div>
+            <div class="basDePage"> Nous contacter</div>
+            <div class="basDePage"> allSpices@gmail.com</div>
+            <div class="basDePage"> +1 819-456-0987</div>
+        </div>
+    </body>
+</html>
