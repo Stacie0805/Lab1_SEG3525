@@ -1,7 +1,7 @@
 /* Cette classe devra representer les differents elements de style de notre site web
     On devra utiliser de ce fait cette page pour styler toutes les differentes pages du site */
 body {
-    background-color: gainsboro;
+    background-color: white;
 }
 
 .header {
@@ -28,7 +28,7 @@ body {
 
 .content {
     background-color: white;
-    height: 50%;
+    height: 65%;
     width: 75%;
     margin-left: 12%;
 }
@@ -37,14 +37,6 @@ body {
     height: 10%;
     width: 100%;
     background-color: darkgray;
-}
-
-.footer {
-    background-color: lightgray;
-    height: 15%;
-    width: 75%;
-    margin-left: 12%;
-    margin-bottom: 20px;
 }
 
 .titre {
@@ -77,9 +69,19 @@ body {
 
 .contenu {
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .confirm {
     float: right;
     margin-right: 5px;
+}
+
+.ville {
+    font-weight: bolder;
+}
+
+.introduction {
+    font-weight: bold;
+    text-align: center;
 }

@@ -1,5 +1,6 @@
 <html>
     <head>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="./home.css"> 
         <title> Order Online </title>
     </head>
@@ -29,26 +30,42 @@
                 <input type="search" placeholder="Entrer votre recherche" id="site_search"/>
                 <button> search </button>
                 <br/>
-                AllSpices est votre site de commande de nourritures de reference. Dans notre site, vous pouvez commander seon votre envie.
+                <i class="information">
+                AllSpices est votre site de commande de nourritures de reference. Dans notre site, vous pouvez commander selon votre envie.
                 On vous propose divers repas en fonction des moments de la journee. On vous propose des petit-dejeuner, lunch, diner,
-                boisson ainsi que des repas a emporter.
-            <i>
-                Nous operons au Quebec et aux alentours. Nous exercons dans diverses villes tel que Ottawa, Gatineau, Aylmer, Hull, Kanata, Montreal, Carleton.
-            </i><br/>
+                boisson ainsi que des repas a emporter. Vous pouvez egalement selectionner votre ville afin de repertorier les restaurants 
+                de votre ville.
+                </i>
+            </p>
+
+            <form class="contenu">
+                <div class="ville"> Selectionnez votre ville:
+                    <select name="ville">
+                        <option value="montreal"> Montreal </option> 
+                        <option value="alberta"> Alberta </option>
+                        <option value="ottawa"> Ottawa </option>
+                        <option value="toronto"> Toronto </option>
+                        <option value="quebec" selected> Quebec </option> 
+                        <option value="vancouver"> Vancouver </option>
+                        <option value="edmonton"> Edmonton </option>
+                        <option value="winnipeg"> Winnipeg </option>
+                        <option value="hamilton"> Hamilton </option>
+                        <option value="gatineau"> Gatineau </option>
+                        <option value="halifax"> Halifax </option>
+                        <option value="trois-rivieres"> Trois-Rivieres </option>
+                        <option value="laval"> Laval </option>   
+                    </select> 
+                </div>
+            </form>
             Selectionez votre type de repas: <br/>
+            <img src="./Web_Pictures/lunch.jpg"/> <br/>
+            Lunch
             <input type="checkbox" id="breakfast" name="Petit-Dejeuner"/><label for="breakfast"> Petit-Dejeuner </label><br/>
             <input type="checkbox" id="lunch" name="Lunch"/><label for="lunch"> Lunch </label><br/>
             <input type="checkbox" id="dinner" name="Diner"/><label for="dinner"> Dinner </label><br/>
             <input type="checkbox" id="takeout" name="takeout"/><label for="takeout"> Emporter </label><br/>
             <input type="checkbox" id="boisson" name="boisson"/><label for="boisson"> Boissons </label><br/>
             </p>
-        </div>
-
-        <div class="footer">
-            <div class="basDePage"> Nous sommes a votre ecoute a tout temps.</div>
-            <div class="basDePage"> Nous contacter</div>
-            <div class="basDePage"> allSpices@gmail.com</div>
-            <div class="basDePage"> +1 819-456-0987</div>
         </div>
     </body>
 </html>
