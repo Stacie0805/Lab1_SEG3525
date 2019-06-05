@@ -20,10 +20,10 @@ body {
 }
 
 .texte {
-    width: 63%;
-    height: 100%;
+    /* width: 63%;
+    height: 100%; */
     background-color: lightgray;
-    float: right;
+    /* float: right; */
 }
 
 .content {
@@ -34,16 +34,15 @@ body {
 }
 
 .navBar {
-    height: 10%;
-    width: 100%;
-    background-color: darkgray;
+    /* height: 10%;
+    width: 100%; */
+    background-color: darkgray !important;
 }
 
 .titre {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 26px;
-    padding-top: 50px;
+    /* text-align: center;
+    font-size: 26px; */
+    padding-top: 40px;
 }
 
 .subtitle {
@@ -52,15 +51,21 @@ body {
 
 .nav {
     list-style-type: none;
-    display: flex;
     font-weight: 100;
     margin-right: 160px;
     float: right;
 }
 
 .link {
-    margin-left: 15px;
-    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 50px;
+}
+
+.extremeLeft {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 200px;
 }
 
 .basDePage {

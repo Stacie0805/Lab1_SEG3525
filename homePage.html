@@ -1,71 +1,137 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link href="./bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./home.css"> 
         <title> Order Online </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
-        <div class="header">
-            <div class="logo"></div>
-            <div class="texte">
-                <div class="titre"><b> ALLSPICES </b></div>
-                <div class="subtitle"><i> Votre site de commande en ligne </i></div>
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-5">
+                            <img class="rounded-circle float-right" alt="logo" src="./Web_Pictures/home.jpg">
+                        </div>
+                        <div class="col-md-7 texte">
+                            <h1 class="text-center titre"><b> ALLSPICES </b></h1>
+                            <h5 class="text-center"><i class="subtitle"> Votre site de commande </i></h5>
+                        </div>
+                </div>
+        </div>
+
+        <div class="container">
+            <div class="row navBar">
+                <ul class="nav float-right">
+                    <li class="extremeLeft"><a href="./homePage.html" class="text-dark"> Accueil </a></li>
+                    <li class="link"><a href="./listeRestaurant.html" class="text-dark"> Restaurants </a></li>
+                    <li class="link"><a href="./menu.html" class="text-dark"> Liste des menu </a></li>
+                    <li class="link"><a href="./order.html" class="text-dark"> Panier </a></li> 
+                    <li class="link"><a href="./payment.html" class="text-dark"> Paiement </a></li>
+                </ul>
             </div>
         </div>
 
-        <div class="navBar">
-            <ul class="nav">
-                <li class="link"><a href="./homePage.html"> Accueil </a></li>
-                <li class="link"><a href="./listeRestaurant.html"> Restaurants </a></li>
-                <li class="link"><a href="./menu.html"> Liste des menu </a></li>
-                <li class="link"><a href="./order.html"> Panier </a></li> 
-                <li class="link"><a href="./payment.html"> Paiement </a></li>
-            </ul>
-        </div>
-
-        <div class="content">
-            <br/>
-            <p class="contenu">
-                <input type="search" placeholder="Entrer votre recherche" id="site_search"/>
-                <button> search </button>
-                <br/>
-                <i class="information">
-                AllSpices est votre site de commande de nourritures de reference. Dans notre site, vous pouvez commander selon votre envie.
-                On vous propose divers repas en fonction des moments de la journee. On vous propose des petit-dejeuner, lunch, diner,
-                boisson ainsi que des repas a emporter. Vous pouvez egalement selectionner votre ville afin de repertorier les restaurants 
-                de votre ville.
-                </i>
-            </p>
-
-            <form class="contenu">
-                <div class="ville"> Selectionnez votre ville:
-                    <select name="ville">
-                        <option value="montreal"> Montreal </option> 
-                        <option value="alberta"> Alberta </option>
-                        <option value="ottawa"> Ottawa </option>
-                        <option value="toronto"> Toronto </option>
-                        <option value="quebec" selected> Quebec </option> 
-                        <option value="vancouver"> Vancouver </option>
-                        <option value="edmonton"> Edmonton </option>
-                        <option value="winnipeg"> Winnipeg </option>
-                        <option value="hamilton"> Hamilton </option>
-                        <option value="gatineau"> Gatineau </option>
-                        <option value="halifax"> Halifax </option>
-                        <option value="trois-rivieres"> Trois-Rivieres </option>
-                        <option value="laval"> Laval </option>   
-                    </select> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br/>
+                    <input type="search" placeholder="Entrer votre recherche" id="site_search"/>
+                    <button> search </button>
+                    <br/>
+                    <br/>
+                    <i class="information">
+                    AllSpices est votre site de commande de nourritures de reference. Dans notre site, vous pouvez commander selon votre envie.
+                    On vous propose divers repas en fonction des moments de la journee. On vous propose des petit-dejeuner, lunch, diner,
+                    boisson ainsi que des repas a emporter. Vous pouvez egalement selectionner votre ville afin de repertorier les restaurants 
+                    de votre ville.
+                    </i>
+                    <br/>
+                    <br/>
+                    <form class="contenu">
+                        <div class="ville"> Selectionnez votre ville:
+                            <select name="ville">
+                                <option value="montreal"> Montreal </option> 
+                                <option value="alberta"> Alberta </option>
+                                <option value="ottawa"> Ottawa </option>
+                                <option value="toronto"> Toronto </option>
+                                <option value="quebec" selected> Quebec </option> 
+                                <option value="vancouver"> Vancouver </option>
+                                <option value="edmonton"> Edmonton </option>
+                                <option value="winnipeg"> Winnipeg </option>
+                                <option value="hamilton"> Hamilton </option>
+                                <option value="gatineau"> Gatineau </option>
+                                <option value="halifax"> Halifax </option>
+                                <option value="trois-rivieres"> Trois-Rivieres </option>
+                                <option value="laval"> Laval </option>   
+                            </select> 
+                        </div>
+                    </form>
+                    Selectionez votre type de repas:
+                    <br/>
+                    <br/>
                 </div>
-            </form>
-            Selectionez votre type de repas: <br/>
-            <img src="./Web_Pictures/lunch.jpg"/> <br/>
-            Lunch
-            <input type="checkbox" id="breakfast" name="Petit-Dejeuner"/><label for="breakfast"> Petit-Dejeuner </label><br/>
-            <input type="checkbox" id="lunch" name="Lunch"/><label for="lunch"> Lunch </label><br/>
-            <input type="checkbox" id="dinner" name="Diner"/><label for="dinner"> Dinner </label><br/>
-            <input type="checkbox" id="takeout" name="takeout"/><label for="takeout"> Emporter </label><br/>
-            <input type="checkbox" id="boisson" name="boisson"/><label for="boisson"> Boissons </label><br/>
-            </p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./Web_Pictures/petit-dejeuner.jpg">
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-md-4">
+                    <img src="./Web_Pictures/lunch.jpg">
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-md-4">
+                    <img src="./Web_Pictures/dinner.jpg">
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="text-center"><a href="./petitDejeuner.html" class="text-body"> Petit-Dejeuner </a></h4>
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-center"> Lunch </h4>
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-center"> Dinner </h4>
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./Web_Pictures/emporter.jpg">
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-md-4">
+                    <img src="./Web_Pictures/boissons.jpg">
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="text-center"> Emporter </h4>
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-center"> Boissons </h4>
+                    <br/>
+                    <br/>
+                </div>
+            </div>
         </div>
     </body>
+
 </html>
