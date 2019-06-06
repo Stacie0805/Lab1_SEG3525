@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../allSpices.ts"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link href="../bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../home.css"> 
+        <title> Order Online </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $("h5").on("click", function() {
+            $("table").append("<tr><td> 1 oeuf avec viande </td><td> 8.50 </td></tr>");
+        })
+    })
+    </script>
+
+    <body>
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-5">
+                            <img class="rounded-circle float-right" alt="logo" src="../Web_Pictures/home.jpg">
+                        </div>
+                        <div class="col-md-7 texte">
+                            <h1 class="text-center titre"><b> ALLSPICES </b></h1>
+                            <h5 class="text-center"><i class="subtitle"> Votre site de commande </i></h5>
+                        </div>
+                </div>
+        </div>
+
+        <div class="container">
+            <div class="row navBar">
+                <ul class="nav float-right">
+                    <li class="extremeLeft"><a href="../homePage.html" class="text-dark"> Accueil </a></li>
+                    <li class="link"><a href="../listeRestaurant.html" class="text-dark"> Restaurants </a></li>
+                    <li class="link"><a href="../menu.html" class="text-dark"> Liste des menu </a></li>
+                    <li class="link"><a href="../order.html" class="text-dark"> Panier </a></li> 
+                    <li class="link"><a href="../payment.html" class="text-dark"> Paiement </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br/>
+                    <br/>
+                    <h3 class="information"> Mon Resto vous propose un repas variés concernant vos repas. Nous vous proposons des oeufs, des omelettes classiques,
+                        des crepes, des gaufres, des menus enfants ainsi que des legumes pour accompagner. 
+                    </h3>
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../Web_Pictures/oeuf_MonResto.jpg">
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="repas"> Les oeufs du dejeuner </a></h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">                    
+                            <h5 class="repas" id="commande" value="oeuf_avec_viande"><b> 1 oeuf avec viande: </b> 8.50$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <a href="../order.html"> <span class="float-left glyphicon glyphicon-plus" click="add(oeuf_avec_viande , 8.50)"></span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5 class="repas"><b> 2 oeufs avec viande: </b> 9.00$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus" onClick="add(oeufs_avec_viande , 9.00)"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5 class="repas"><b> omelette (3 oeufs) nature:</b> 8.00$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus" onclick="add(omelette , 8.00)"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5 class="repas"><b> omelette avec fromage: </b> 10.00$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus" onclick="add(omelette_avec_fromage , 10.00)"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5 class="repas"><b> omelette vegetarienne: </b> 9.50$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus" onclick="add(omelette_vegetarienne , 9.50)"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5 class="repas"><b> omelette mexicaine: </b> 10.50$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus" onclick="add(omelette_mexicaine , 10.50)"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5 class="repas"><b> onelette toute garnie: </b> 12.00$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus" onclick="add(omelette_toute_garnie , 12.00)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../Web_Pictures/crepes.jpg">
+                    <br/>
+                    <br/>
+                </div>
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="repas"> Les crepes pour le dejeuner </a></h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">                    
+                            <h5 class="repas"><b> crepe nature: </b> 8.50$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="float-left glyphicon glyphicon-plus" onclick="add(crepe_nature , 8.50)"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5 class="repas"><b> crepe fruit de saison: </b> 12.00$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus" onclick="add(crepe_fruit_saison , 12.00)"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5 class="repas"><b> creped fraises: </b> 11.00$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5 class="repas"><b> crepe bananes: </b> 10.50$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5 class="repas"><b> crepe pommes: </b> 10.50$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5 class="repas"><b> crepe bleuets: </b> 10.50$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="repas"><b> crepes bretonnes nature: </b> 8.50$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="repas"><b> crepes bretonnes aux legumes: </b> 9.50$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="repas"><b> crepes bretonnes au jambon et fromage suisse: </b> 10.00$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="repas"><b> crepes bretonnes au bacon et fromage suisse: </b> 11.00$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="repas"><b> crepes bretonnes pommes, miel, amandes et fromage suisse: </b> 11.00$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="repas"><b> crepes bretonnes saumon fume, oignons rouges, crapes et fromage suisse: </b> 14.00$ </h5>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
