@@ -1,45 +1,76 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link href="./bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./home.css"> 
-        <title> Paiement </title>
+        <title> Order Online </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    // $(document).ready(function() {
+    //     $("input").on("click", function() {
+    //         document.getElementById("add").add("<label> Veuillez entrer votre numero de carte: </label>)");
+    //     })
+    // })
+    </script>
 
     <body>
-        <div class="header">
-            <div class="logo"></div>
-            <div class="texte">
-                <div class="titre"><b> ALLSPICES </b></div>
-                <div class="subtitle"><i> Votre site de commande en ligne </i></div>
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-5">
+                            <img class="rounded-circle float-right" alt="logo" src="./Web_Pictures/home.jpg">
+                        </div>
+                        <div class="col-md-7 texte">
+                            <h1 class="text-center titre"><b> ALLSPICES </b></h1>
+                            <h5 class="text-center"><i class="subtitle"> Votre site de commande </i></h5>
+                        </div>
+                </div>
+        </div>
+
+        <div class="container">
+            <div class="row navBar">
+                <ul class="nav float-right">
+                    <li class="extremeLeft"><a href="./homePage.html" class="text-dark"> Accueil </a></li>
+                    <li class="link"><a href="./petitDejeuner.html" class="text-dark"> Restaurants </a></li>
+                    <li class="link"><a href="./menu.html" class="text-dark"> Liste des menu </a></li>
+                    <li class="link"><a href="./order.html" class="text-dark"> Panier </a></li> 
+                    <li class="link"><a href="./payment.html" class="text-dark"> Paiement </a></li>
+                </ul>
             </div>
         </div>
 
-        <div class="navBar">
-            <ul class="nav">
-                <li class="link"><a href="./homePage.html"> Accueil </a></li>
-                <li class="link"><a href="./listeRestaurant.html"> Restaurants </a></li>
-                <li class="link"><a href="./menu.html"> Liste des menu </a></li>
-                <li class="link"><a href="./order.html"> Panier </a></li> 
-                <li class="link"><a href="./payment.html"> Paiement </a></li>
-            </ul>
-        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br/>
+                    <br/>
+                    <h3 class="information"> Veullez entrer vos informations pour enregistrer et valider votre commande. 
+                    </h3>
+                    <br/>
+                    <br/>
+                    <label> Entrez votre nom:  </label> 
+                    <input type="text" placeholder="Noms de Famille"><br/>
+                    <label> Entrez votre prenom: </label> 
+                    <input type="text" placeholder="Votre prenom"> <br/>
+                    <label> Veuillez entrer votre code postal: </label>
+                    <input type="text" placeholder="Code postal"> <br/>
+                    <label> Veuillez choisir votre mode de paiement: </label> <br/>
+                    <input type="radio" id="debit" name="debit"> <label for="debit"> Carte de debit </label> <br/>
+                    <input type="radio" id="credit" name="credit"> <label for="credit"> Carte de credit </label><br/>
+                    <input type="radio" id="cash" name="cash"> <label for="cash"> Cash a la livraison </label>
+                    <label> Veuillez entrer le numero de carte: </label>
+                    <input type="number" placeholder="***************"> <br/>
+                    <p id="add">
 
-        <div class="content">
-            <br/>
-            <form class="contenu">
-                <div> Montant total de la commande </div>
-                <label for="adresse"> Veuillez entrer votre adresse: </label>
-                <input type="text" name="adresse" id="adresse"/> <br/>
-                <label for="code"> Veuillez entrer votre code postal: </label>
-                <input type="text" name="code" id="code"/>
-                <br/>
-                <p>
-                    Veuillez choisir votre mode de paiement: <br/>
-                    <input type="radio" name="debit" id="debit"/> <label for="debit"> Carte de debit </label><br/>
-                    <input type="radio" name="credit" id="credit"/> <label for="credit"> Carte de credit </label><br/>
-                    <input type="radio" name="cash" id="cash"/> <label for="cash"> Cash a la livraison </label> <br/>
-                </p>
-                <input class="confirm" type="button" value="confirmer"/>
-            </form>
+                    </p>
+                </div>
+
+            </div>
+            
         </div>
     </body>
+    
 </html>

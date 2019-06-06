@@ -14,8 +14,16 @@
     <script>
     $(document).ready(function() {
         $("h5").on("click", function() {
-            $("table").append("<tr><td> 1 oeuf avec viande </td><td> 8.50 </td></tr>");
-        })
+            $("p").append("<h4> Vous avez commande 1 oeuf avec jambon: <i> 8.50 </i> <h4>");
+        }),
+        $("h4").on("click",function() {
+            $(this).hide();
+        } )
+    })
+    $(document).ready(function() {
+        $("h4").on("click",function() {
+            $(this).empty();
+        } )
     })
     </script>
 
@@ -36,7 +44,7 @@
             <div class="row navBar">
                 <ul class="nav float-right">
                     <li class="extremeLeft"><a href="../homePage.html" class="text-dark"> Accueil </a></li>
-                    <li class="link"><a href="../listeRestaurant.html" class="text-dark"> Restaurants </a></li>
+                    <li class="link"><a href="../petitDejeuner.html" class="text-dark"> Restaurants </a></li>
                     <li class="link"><a href="../menu.html" class="text-dark"> Liste des menu </a></li>
                     <li class="link"><a href="../order.html" class="text-dark"> Panier </a></li> 
                     <li class="link"><a href="../payment.html" class="text-dark"> Paiement </a></li>
@@ -236,6 +244,14 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            <b> Vos commandes </b>
+                            <br/>
+                            <br/>
+                        </p>
+                </div>
         </div>
     </body>
     
